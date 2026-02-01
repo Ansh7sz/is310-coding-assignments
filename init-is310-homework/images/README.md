@@ -12,4 +12,4 @@
 
 How will you work with AI? What tools if any do you plan to use?
 
-As someone who has had trouble with git previous due to multiple devices and merge conflicts I might use Perplexity for troubleshooting. 
+As someone who has had trouble with git previous due to multiple devices and merge conflicts I might use Perplexity for troubleshooting. I also may use Perplexity to explain topics I may not understand how to help troubleshoot my code. 

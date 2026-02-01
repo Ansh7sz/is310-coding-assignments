@@ -6,7 +6,7 @@
 2. Git
 3. VS Code
 
-![Total Installation Proof](images/installation.png)
+![Total Installation Proof](installation.png)
 
 4. AI Tool/Workflow 
 

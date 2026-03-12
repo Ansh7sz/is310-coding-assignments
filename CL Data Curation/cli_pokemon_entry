@@ -1,0 +1,118 @@
+import csv
+from pathlib import Path
+from rich.console import Console
+from rich.table import Table
+from rich.panel import Panel
+from rich.theme import Theme
+
+
+custom_theme = Theme(
+    {
+        "title": "bold magenta",
+        "prompt": "bold cyan",
+        "success": "bold green",
+        "warning": "bold yellow",
+        "error": "bold red",
+    }
+)
+
+console = Console(theme=custom_theme)
+
+output_dir = Path(__file__).parent / "output"
+output_dir.mkdir(exist_ok=True)
+file_path = output_dir / "pokemon.csv"
+
+pokemon_list = []
+
+if file_path.exists():
+    with open(file_path, "r", encoding="utf-8") as file:
+        reader = csv.reader(file)
+        next(reader, None)  # skip header if present
+        for row in reader:
+            if not row:
+                continue
+            pokemon_list.append(row)
+
+
+console.print(
+    Panel.fit(
+        "[title]Pokédex Data Entry[/title]\n[italic]Add your favorite Pokémon to the CSV file[/italic]",
+        border_style="magenta",
+    )
+)
+
+console.print("\n[prompt]Here is some initial data:[/prompt]")
+
+example_table = Table(title="Example Pokémon") 
+example_table.add_column("Name")
+example_table.add_column("Generation")
+example_table.add_column("Primary Type")
+example_table.add_column("Secondary Type")
+
+
+example_table.add_row("Pikachu", "1", "Electric", "")
+example_table.add_row("Charizard", "1", "Fire", "Flying")
+
+console.print(example_table)
+
+
+if pokemon_list:
+    console.print("\n[prompt]Previously saved Pokémon:[/prompt]")
+
+    saved_table = Table(title="Saved Pokémon")
+    saved_table.add_column("Name")
+    saved_table.add_column("Generation")
+    saved_table.add_column("Primary Type")
+    saved_table.add_column("Secondary Type")
+
+
+    for p in pokemon_list:
+        saved_table.add_row(p[0], p[1], p[2], p[3] or "None")
+
+    console.print(saved_table)
+
+
+console.print("\n[prompt]Now enter your own Pokémon:[/prompt]")
+
+while True:
+    console.print("")  
+    name = console.input("[prompt]Pokémon name[/prompt]: ")
+    generation = console.input("[prompt]Generation number (e.g. 1, 2, 3)[/prompt]: ")
+    primary_type = console.input("[prompt]Primary type[/prompt]: ")
+    secondary_type = console.input("[prompt]Secondary type (leave blank if none)[/prompt]: ")
+
+    confirm_table = Table(title="Confirm Pokémon Entry", show_header=True)
+    confirm_table.add_column("Field", no_wrap=True)
+    confirm_table.add_column("Value")
+
+
+    confirm_table.add_row("Name", name)
+    confirm_table.add_row("Generation", generation)
+    confirm_table.add_row("Primary Type", primary_type)
+    confirm_table.add_row("Secondary Type", secondary_type if secondary_type else "None")
+
+    console.print("")
+    console.print(confirm_table)
+
+    confirm = console.input("[prompt]Is this correct? (y/n)[/prompt]: ").lower()
+
+    if confirm == "y":
+        pokemon_list.append([name, generation, primary_type, secondary_type])
+        console.print("[success]Entry saved.[/success]")
+    else:
+        console.print("[warning]Re-enter the Pokémon.[/warning]")
+        continue
+
+    again = console.input("[prompt]Add another Pokémon? (y/n)[/prompt]: ").lower()
+    if again != "y":
+        break
+
+
+with open(file_path, "w", newline="", encoding="utf-8") as file:
+    writer = csv.writer(file)
+    writer.writerow(["Name", "Generation", "Primary Type", "Secondary Type"])
+    writer.writerows(pokemon_list)
+
+console.print("\n[success]Data saved successfully![/success]")
+console.print(f"[prompt]File location:[/prompt] {file_path.resolve()}")
+console.print("\n[title]Gotta catch 'em all![/title]")

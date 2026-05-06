@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sachin Tendulkar’s Cricket Bat</title>
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f6f1e8;
+      --surface: #fffaf3;
+      --surface-2: #f3eadf;
+      --text: #1f1a16;
+      --muted: #665c52;
+      --accent: #7b4f2a;
+      --border: #dbd0c2;
+      --shadow: 0 18px 50px rgba(44, 28, 16, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Satoshi", Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(123, 79, 42, 0.08), transparent 35%),
+        linear-gradient(180deg, var(--bg), #efe6da);
+      line-height: 1.65;
+    }
+
+    .page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 1rem 3rem;
+    }
+
+    .hero {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: 1.2fr 0.8fr;
+      align-items: start;
+      padding: 1.5rem;
+    }
+
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+
+    h1, h2, h3 {
+      font-family: "General Sans", "Satoshi", Arial, sans-serif;
+      line-height: 1.1;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: clamp(2.4rem, 4vw, 4.5rem);
+      max-width: 10ch;
+    }
+
+    .intro {
+      margin-top: 1rem;
+      max-width: 60ch;
+      font-size: 1.05rem;
+    }
+
+    .meta-box {
+      padding: 1.25rem;
+      background: var(--surface-2);
+      border-radius: 18px;
+      border: 1px solid var(--border);
+    }
+
+    .meta-box h2 {
+      font-size: 1.1rem;
+      margin-bottom: 0.85rem;
+    }
+
+    dl {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 0.55rem 1rem;
+      margin: 0;
+    }
+
+    dt {
+      font-weight: 700;
+      color: var(--muted);
+    }
+
+    dd {
+      margin: 0;
+    }
+
+    .artwork {
+      padding: 1rem;
+    }
+
+    .artwork img {
+      width: 100%;
+      display: block;
+      border-radius: 18px;
+      border: 1px solid var(--border);
+      background: #eee;
+    }
+
+    .content {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 1.5rem;
+    }
+
+    .section {
+      padding: 1.5rem;
+    }
+
+    .section h2 {
+      font-size: 1.4rem;
+      margin-bottom: 0.9rem;
+    }
+
+    p, li {
+      font-size: 1rem;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 1.2rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+
+    .button-link {
+      display: inline-block;
+      padding: 0.8rem 1rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: white;
+    }
+
+    .footer-note {
+      margin-top: 1.5rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 800px) {
+      .hero,
+      .content {
+        grid-template-columns: 1fr;
+      }
+
+      .page {
+        padding-inline: 0.75rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero panel">
+      <div>
+        <p class="eyebrow">3-2-1 Qatar Olympic and Sports Museum</p>
+        <h1>Sachin Tendulkar’s Cricket Bat</h1>
+        <p class="intro">
+          This bat is a signed Adidas “Master Blaster” bat used by Sachin Tendulkar, one of cricket’s most celebrated players. In the Qatar Museums collection, it stands as a sports artifact that connects athletic achievement, branding, and museum preservation.
+        </p>
+
+        <div class="links">
+          <a class="button-link" href="https://collections.qm.org.qa/en/objects/sachin-tendulkars-cricket-bat-qosm2014289" target="_blank" rel="noopener noreferrer">View collection record</a>
+          <a class="button-link" href="https://qm.org.qa/en/stories/all-stories/collection-highlight-sachin-tendulkars-master-blaster/" target="_blank" rel="noopener noreferrer">Read Qatar Museums story</a>
+        </div>
+      </div>
+
+      <div class="artwork">
+        <img src="images/sachin-bat-screenshot.png" alt="Screenshot of Sachin Tendulkar’s Cricket Bat object page from Qatar Museums" />
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="panel section">
+        <h2>Description</h2>
+        <p>
+          The object represents a piece of cricket history associated with Sachin Tendulkar’s career. It is meaningful not only as sports equipment, but also as a museum object that reflects celebrity, memory, and the global culture of cricket.
+        </p>
+        <p>
+          The collection text describes it as a used and signed bat, with the front and back carrying the “ST/Sachin Tendulkar” emblem.
+        </p>
+      </div>
+
+      <div class="panel section">
+        <h2>Relevant metadata</h2>
+        <ul>
+          <li><strong>Title:</strong> Sachin Tendulkar’s Cricket Bat</li>
+          <li><strong>Producer:</strong> adidas AG</li>
+          <li><strong>Date:</strong> 2008</li>
+          <li><strong>Period:</strong> 21st century CE</li>
+          <li><strong>Material:</strong> Wood, rubber, plastic</li>
+          <li><strong>Technique:</strong> Carving, handwriting, adhesion</li>
+          <li><strong>Dimensions:</strong> 85 × 10.5 × 7.5 cm</li>
+        </ul>
+      </div>
+    </section>
+
+    <p class="footer-note">
+      Source: Qatar Museums online collection and story page.
+    </p>
+  </main>
+</body>
+</html>

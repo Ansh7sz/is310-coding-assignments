@@ -1,0 +1,118 @@
+{
+    "selected_api": "rawg",
+    "search_term": "Valorant",
+    "rawg_item": {
+        "id": 415171,
+        "name": "Valorant",
+        "released": "2020-06-02",
+        "rating": 3.53,
+        "metacritic": 80,
+        "genres": [
+            "Action",
+            "Shooter",
+            "Strategy"
+        ],
+        "platforms": [
+            "PC",
+            "Xbox Series S/X",
+            "PlayStation 5"
+        ]
+    },
+    "europeana_items": [
+        {
+            "id": "/773/https___catalonica_bnc_cat_catalonicahub_lod_oai_mdc_csuc_cat_FClausells____4623_ent0",
+            "title": [
+                "[Conté un article valorant molt positivament la celebració de la primera festa dels infants.]"
+            ],
+            "type": "TEXT",
+            "dataProvider": [
+                "Digital Memory of Catalonia"
+            ],
+            "country": [
+                "Spain"
+            ],
+            "rights": [
+                "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+            ],
+            "edmPreview": [
+                "https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fmdc.csuc.cat%2Fiiif%2F2%2FFClausells%3A4621%2Ffull%2F546%2C%2F0%2Fdefault.jpg&type=TEXT"
+            ]
+        },
+        {
+            "id": "/355/https___hispana_mcu_es_lod_oai_riunet_upv_es_10251____210566_ent0",
+            "title": [
+                "Desarrollo de una aplicación de apoyo para Valorant, el popular shooter free-to-play de RIOT"
+            ],
+            "type": "TEXT",
+            "dataProvider": [
+                "Polytechnic University of Valencia"
+            ],
+            "country": [
+                "Spain"
+            ],
+            "rights": [
+                "http://rightsstatements.org/vocab/InC/1.0/"
+            ],
+            "edmPreview": [
+                "https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Friunet.upv.es%2Fbitstreams%2F076bf45e-6667-481f-b5b9-9c92d7f24ed8%2Fdownload&type=TEXT"
+            ]
+        },
+        {
+            "id": "/1150/https___catalonica_bnc_cat_catalonicahub_lod_oai_dugifonsespecials_udg_edu_10256_2____1773_ent0",
+            "title": [
+                "Carta de 1983-02-15 a Josep Ferrater Mora des de Nova York (Estats Units d'Amèrica)"
+            ],
+            "type": "TEXT",
+            "dataProvider": [
+                "UdG Digital Repository"
+            ],
+            "country": [
+                "Spain"
+            ],
+            "rights": [
+                "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+            ],
+            "edmPreview": [
+                "https://api.europeana.eu/thumbnail/v2/url.json?uri=https%3A%2F%2Fdugifonsespecials.udg.edu%2Fbitstream%2F10256.2%2F1773%2F1%2FID1_585_TC.pdf&type=TEXT"
+            ]
+        },
+        {
+            "id": "/2024914/photography_ProvidedCHO_Ajuntament_de_Girona_917527",
+            "title": [
+                "Competiciones en Campo de Marte"
+            ],
+            "type": "IMAGE",
+            "dataProvider": [
+                "Ajuntament de Girona"
+            ],
+            "country": [
+                "Spain"
+            ],
+            "rights": [
+                "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+            ],
+            "edmPreview": [
+                "https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fsgdap.girona.cat%2Fsdam%2Fimatges%2F917527.jpg&type=IMAGE"
+            ]
+        },
+        {
+            "id": "/2024914/photography_ProvidedCHO_Ajuntament_de_Girona_908890",
+            "title": [
+                "[Competicions de gimnàstica al gimnàs de Sant Narcís]"
+            ],
+            "type": "IMAGE",
+            "dataProvider": [
+                "Ajuntament de Girona"
+            ],
+            "country": [
+                "Spain"
+            ],
+            "rights": [
+                "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+            ],
+            "edmPreview": [
+                "https://api.europeana.eu/thumbnail/v2/url.json?uri=http%3A%2F%2Fsgdap.girona.cat%2Fsdam%2Fimatges%2F908890.jpg&type=IMAGE"
+            ]
+        }
+    ]
+}
